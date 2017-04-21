@@ -119,7 +119,6 @@ $(document).ready(function(){
       num = [];
     } else if (string[i] === '/' || string[i] === '*') {
       opp.push(string[i]);
-      // opp.unshift(string[i]);
       expression.push(num.join(''));
       num = [];
     } else {
