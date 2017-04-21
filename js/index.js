@@ -46,16 +46,16 @@ $(document).ready(function(){
   function equalButton() {
     if(maths.indexOf('/') === 0){
       $screen.empty();
-      $screen.append('ERROR')
+      $screen.append('ERROR');
     } else if(maths.indexOf('*') === 0){
       $screen.empty();
-      $screen.append('ERROR')
+      $screen.append('ERROR');
     } else if(rpn(maths) === 'Infinity'){
       $screen.empty();
-      $screen.append('ERROR')
+      $screen.append('ERROR');
     }else {
       var total = rpn(maths);
-      maths = total
+      maths = total;
       $screen.empty();
       $screen.append(maths);
     }
@@ -112,7 +112,7 @@ $(document).ready(function(){
   var expression = [];
   var opp = [];
 
-  for(var i = 0; i < string.length; i++){
+  for(let i = 0; i < string.length; i++){
     if (string[i] === '+' || string[i] === '-') {
       opp.push(string[i]);
       expression.push(num.join(''));
